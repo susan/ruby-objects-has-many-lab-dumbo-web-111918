@@ -44,6 +44,6 @@ class Artist
     # sum
   end
 end
-binding.pry
+#binding.pry
 
 Susan = Artist.new("Susan")
