@@ -6,11 +6,11 @@ class Post
   def initialize(title)
 	  @title = title
     @@all << self
-  end	
+  end
 
   def self.all
   	@@all
-  end	
+  end
 
   def author_name
     result = nil
@@ -20,5 +20,5 @@ class Post
      	  #why did I have to use self.author
      end
     result
-  end	
+  end
 end	
