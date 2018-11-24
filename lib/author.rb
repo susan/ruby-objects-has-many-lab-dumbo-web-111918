@@ -1,11 +1,11 @@
 class Author
-  
+
   attr_accessor :name
   @@all =[]
   def initialize(name)
 	  @name = name
 	  @posts =[] #initialize with empty post array as we want to collect what they write
-  end	
+  end
 
   def posts
     @posts
@@ -15,8 +15,8 @@ class Author
   	@posts << post
   	@@all << post
   	post.author = self #self is the author so if you write post.author you will get author
-     #the receiver is post.author 
-     #in order to call author, i had to define class for post and also give it attribute of author 
+     #the receiver is post.author
+     #in order to call author, i had to define class for post and also give it attribute of author
   end
 
   def add_post_by_title(title)
@@ -30,6 +30,6 @@ class Author
 
   def self.post_count
   	@@all.length
-  end	
+  end
 
 end	
